@@ -8,9 +8,14 @@ namespace SportsWebApp.Models.AccountViewModels
 {
     public class LoginViewModel
     {
-        [Required]
+        //[Required]
+        [Display(Name = "Email")]
         [EmailAddress]
         public string Email { get; set; }
+
+        [Display(Name = "User Name")]
+        [Required]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
