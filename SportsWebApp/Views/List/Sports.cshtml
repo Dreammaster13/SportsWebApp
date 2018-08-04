@@ -1,0 +1,21 @@
+﻿<h1>@ViewBag.title</h1>
+
+<h3>@ViewBag.sports.Count Result(s)</h3>
+
+@{
+    foreach (Dictionary<string, string> sport in ViewBag.sports)
+    {
+        <table>
+            @foreach (KeyValuePair<string, string> entry in sport)
+            {
+                <tr>
+                    <td><strong>@entry.Key</strong></td>
+                    <td>@entry.Value</td>
+                </tr>
+
+            }
+        </table>
+        <p></p>
+        <p></p>
+    }
+}
