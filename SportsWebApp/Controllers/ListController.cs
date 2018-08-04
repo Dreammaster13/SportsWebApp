@@ -20,10 +20,10 @@ namespace SportsWebApp.Controllers
         {
 
             columnChoices.Add("name", "Name");            
-            columnChoices.Add("employer", "Employer");
+            columnChoices.Add("team", "Team");
             columnChoices.Add("location", "Location");
-            columnChoices.Add("position type", "Position Type");
-            //columnChoices.Add("jersey number", "Jersey Number");
+            columnChoices.Add("player type", "Player Type");
+            columnChoices.Add("jersey number", "Jersey Number");
             columnChoices.Add("all", "All");
         }
 

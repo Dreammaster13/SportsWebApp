@@ -118,16 +118,16 @@ namespace SportsWebApp.Models
             rows.Remove(headers);
 
             //parse each row array intoa more friendly Dictionary
-            //foreach (string[] row in rows)
-            //{
-            //    Dictionary<string, string> rowDict = new Dictionary<string, string>();
+            foreach (string[] row in rows)
+            {
+                Dictionary<string, string> rowDict = new Dictionary<string, string>();
 
-            //    for (int i = 0; i < headers.Length; i++)
-            //    {
-            //        rowDict.Add(headers[i], row[i]);
-            //    }
-            //    AllSports.Add(rowDict);
-            //}
+                for (int i = 0; i < headers.Length; i++)
+                {
+                    rowDict.Add(headers[i], row[i]);
+                }
+                AllSports.Add(rowDict);
+            }
 
             IsDataLoaded = true;
         }
