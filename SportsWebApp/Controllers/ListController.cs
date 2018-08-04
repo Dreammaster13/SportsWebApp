@@ -23,7 +23,7 @@ namespace SportsWebApp.Controllers
             columnChoices.Add("employer", "Employer");
             columnChoices.Add("location", "Location");
             columnChoices.Add("position type", "Position Type");
-            columnChoices.Add("jersey number", "Jersey Number");
+            //columnChoices.Add("jersey number", "Jersey Number");
             columnChoices.Add("all", "All");
         }
 
@@ -52,7 +52,7 @@ namespace SportsWebApp.Controllers
             }
         }
 
-        public IActionResult Jobs(string column, string value)
+        public IActionResult Sports(string column, string value)
         {
             List<Dictionary<String, String>> sports = SportData.FindByColumnAndValue(column, value);
             ViewBag.title = "Sports with " + columnChoices[column] + ": " + value;
