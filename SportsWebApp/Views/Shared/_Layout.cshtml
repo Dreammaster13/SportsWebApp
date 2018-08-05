@@ -20,26 +20,281 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-hover="dropdown" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Leagues" asp-action="Index" class="navbar-brand">Sports App</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Sports App</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Leagues" asp-action="Index">Leagues</a></li>
-                    <li><a asp-area="" asp-controller="Search" asp-action="Index">Search</a></li>
-
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="100" data-close-others="true">NBA<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-6">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Atlantic</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Brooklyn</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Totonto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Central</a></li>
+                                        <li><a href="#">Chicago</a></li>
+                                        <li><a href="#">Cleveland</a></li>
+                                        <li><a href="#">Detroit</a></li>
+                                        <li><a href="#">Idiana</a></li>
+                                        <li><a href="#">Milwaukee</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">NorthWest</a></li>
+                                        <li><a href="#">Denver</a></li>
+                                        <li><a href="#">Minnesota</a></li>
+                                        <li><a href="#">Oklahoma</a></li>
+                                        <li><a href="#">Portland</a></li>
+                                        <li><a href="#">Utah</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Pacific</a></li>
+                                        <li><a href="#">Golden St.</a></li>
+                                        <li><a href="#">LA Clippers</a></li>
+                                        <li><a href="#">LA Lakers</a></li>
+                                        <li><a href="#">Phoenix</a></li>
+                                        <li><a href="#">Sacramento</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">SouthEast</a></li>
+                                        <li><a href="#">Atlanta</a></li>
+                                        <li><a href="#">Charlotte</a></li>
+                                        <li><a href="#">Miami</a></li>
+                                        <li><a href="#">Orlando</a></li>
+                                        <li><a href="#">Washington</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">SouthWest</a></li>
+                                        <li><a href="#">Dallas</a></li>
+                                        <li><a href="#">Houston</a></li>
+                                        <li><a href="#">Memphis</a></li>
+                                        <li><a href="#">New Orleans</a></li>
+                                        <li><a href="#">San Antonio</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="100" data-close-others="true">NFL<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-8">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Buffalo</a></li>
+                                            <li><a href="#">Miami</a></li>
+                                            <li><a href="#">New England</a></li>
+                                            <li><a href="#">NY Jets</a></li>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Baltimore</a></li>
+                                            <li><a href="#">Cincinati</a></li>
+                                            <li><a href="#">Cleveland</a></li>
+                                            <li><a href="#">Pittsburgh</a></li>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Houston</a></li>
+                                            <li><a href="#">Indianapolis</a></li>
+                                            <li><a href="#">Jaksonville</a></li>
+                                            <li><a href="#">Tennessee</a></li>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Denver</a></li>
+                                            <li><a href="#">Kansas City</a></li>
+                                            <li><a href="#">Los Angeles</a></li>
+                                            <li><a href="#">Oakland</a></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Dallas</a></li>
+                                            <li><a href="#">NY Giants</a></li>
+                                            <li><a href="#">Philadelphia</a></li>
+                                            <li><a href="#">Washington</a></li>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Chicago</a></li>
+                                            <li><a href="#">Detroit</a></li>
+                                            <li><a href="#">Green Bay</a></li>
+                                            <li><a href="#">Minnesota</a></li>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Atlanta</a></li>
+                                            <li><a href="#">Carolina</a></li>
+                                            <li><a href="#">New Orleans</a></li>
+                                            <li><a href="#">Tampa Bay</a></li>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <li><a href="#">Arizona</a></li>
+                                            <li><a href="#">Los Angeles</a></li>
+                                            <li><a href="#">San Francisco</a></li>
+                                            <li><a href="#">Seattle</a></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="100" data-close-others="true">NHL<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-4">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Atlantic</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Buffalo</a></li>
+                                        <li><a href="#">Detroit</a></li>
+                                        <li><a href="#">Florida</a></li>
+                                        <li><a href="#">Montreal</a></li>
+                                        <li><a href="#">Ottawa</a></li>
+                                        <li><a href="#">Tampa Bay</a></li>
+                                        <li><a href="#">Toronto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Central</a></li>
+                                        <li><a href="#">Chicago</a></li>
+                                        <li><a href="#">Colorado</a></li>
+                                        <li><a href="#">Dallas</a></li>
+                                        <li><a href="#">Minnesota</a></li>
+                                        <li><a href="#">Nashville</a></li>
+                                        <li><a href="#">St. Louis</a></li>
+                                        <li><a href="#">Winnipeg</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Pacific</a></li>
+                                        <li><a href="#">Anaheim</a></li>
+                                        <li><a href="#">Arizona</a></li>
+                                        <li><a href="#">Calgary</a></li>
+                                        <li><a href="#">Edmonton</a></li>
+                                        <li><a href="#">Los Angeles</a></li>
+                                        <li><a href="#">San Jose</a></li>
+                                        <li><a href="#">Vancouver</a></li>
+                                        <li><a href="#">Vegas</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">Metropolitan</a></li>
+                                        <li><a href="#">Carolina</a></li>
+                                        <li><a href="#">Columbus</a></li>
+                                        <li><a href="#">New Jersey</a></li>
+                                        <li><a href="#">NY Islanders</a></li>
+                                        <li><a href="#">NY Rangers</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Pittsburgh</a></li>
+                                        <li><a href="#">Washington</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="100" data-close-others="true">MLB<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-6">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">AL East</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Brooklyn</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Totonto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">AL Central</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Brooklyn</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Totonto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">AL West</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Brooklyn</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Totonto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">NL East</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Brooklyn</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Totonto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">NL Central</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Brooklyn</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Totonto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="#">NL West</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Brooklyn</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Philadelphia</a></li>
+                                        <li><a href="#">Totonto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.stubhub.com/sports-tickets/category/28/">Tickets</a></li>
                     <li><a asp-area="" asp-controller="Blog" asp-action="Index">Blog</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Brackets</a></li>
+                    <li><a asp-area="" asp-controller="Search" asp-action="Index">Search</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
-                @await Html.PartialAsync("_LoginPartial")
-            </div>
+                        @await Html.PartialAsync("_LoginPartial")
+</div>
         </div>
     </nav>
     <div class="container body-content">
@@ -53,6 +308,7 @@
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap-hover-dropdown.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
