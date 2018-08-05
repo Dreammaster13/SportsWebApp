@@ -3,5 +3,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Blog</h2>
+<h2>@ViewBag.Post.Title</h2>
+
+@Html.Raw(ViewBag.Post.Body)
 
