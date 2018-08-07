@@ -18,4 +18,4 @@
 * API
 
 <h3>License</h3>
-<p>Currently Sports Web App holds MIT License.
+<p>Currently Sports Web App holds [MIT License!](https://github.com/Dreammaster13/SportsWebApp/blob/master/LICENSE.TXT).
