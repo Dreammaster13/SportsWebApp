@@ -1,10 +1,10 @@
 
 <h1>Spots Web App</h3>
 
-<h3>Overview</h3>
-<p>Sports Web App is totally dedicated to Major U.S. Sports and Athletes. <p/>
+## Overview:
+Sports Web App is totally dedicated to Major U.S. Sports and Athletes.
 
-<h3>Features</h3>
+## Features:
 - [x] User Sign Up, Login, Validation.
 - [x] Search athletes, teams.
 - [] Bracket App with Playoff picture.
@@ -12,10 +12,10 @@
 - [] Fantasy Points Calculator.
 
 
-<h3>Technologies</h3>
+## Technologies:
 * HTML , CSS , Bootstrap.
 * C# , SQL.
 * API
 
-<h3>License</h3>
-<p>Currently Sports Web App holds [MIT License!](https://github.com/Dreammaster13/SportsWebApp/blob/master/LICENSE.TXT).
+## License:
+Currently Sports Web App holds [MIT License!](https://github.com/Dreammaster13/SportsWebApp/blob/master/LICENSE.TXT).
