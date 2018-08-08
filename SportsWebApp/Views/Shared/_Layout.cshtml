@@ -293,16 +293,52 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
-                        @await Html.PartialAsync("_LoginPartial")
-</div>
+                @await Html.PartialAsync("_LoginPartial")
+            </div>
         </div>
     </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - All About Sports</p>
-        </footer>
+    @*<div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - All About Sports</p>
+            </footer>
+        </div>*@
+    <div class="container-fluid">
+        <h1>Home Page</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+        <div class="row">
+            <div class="col-sm-8 col-lg-8" style="background-color:olive">
+
+                @RenderBody()
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - All About Sports</p>
+                </footer>
+            </div>
+            <div class="col-sm-4 col-lg-4" style=" background-color:cornflowerblue">
+                <div class="body-content">
+                    <a class="twitter-timeline" href="https://twitter.com/espn?ref_src=twsrc%5Etfw">Tweets by espn</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum auctor euismod. Donec eleifend neque mollis ipsum ornare consequat. Ut sed urna tempor, pulvinar urna ac, eleifend urna. Curabitur malesuada ipsum et velit posuere auctor. Nam venenatis magna felis, vel tincidunt ligula feugiat eget. Nullam vel eros lorem. Suspendisse quam eros, congue at libero ac, semper sodales tortor. Etiam gravida ultrices libero, sed commodo ligula efficitur et. Duis sit amet placerat mauris.
+
+                        Morbi vitae massa sollicitudin sem dignissim vestibulum. Aenean efficitur ultrices tincidunt. Curabitur nec neque ac nisi ornare varius. Pellentesque orci ipsum, pretium in pretium vel, auctor ultrices arcu. Nam bibendum turpis vel tristique blandit. Donec eget pretium turpis, quis viverra turpis. Vivamus accumsan est non nunc auctor, in pretium lectus molestie. Proin sed bibendum lectus. Suspendisse ultrices est vitae dui mollis, sed sagittis orci convallis. Fusce et feugiat augue. Quisque varius rutrum libero sit amet volutpat. Sed at ex at nulla vehicula rutrum eu nec tortor.
+
+                        Nam sagittis augue eu turpis tristique pellentesque. Nullam convallis, tortor nec gravida condimentum, dui purus faucibus ex, nec ultrices neque arcu in justo. Donec nunc mauris, tincidunt non erat at, maximus pretium metus. Praesent pretium metus et metus condimentum, eu pretium enim dignissim. Donec sagittis quis nibh ornare gravida. Sed a sem ipsum. Praesent sit amet tellus tempus, tempus mi at, ullamcorper risus. Phasellus porta lacinia nisl, nec porta risus molestie non. Etiam sem turpis, tristique quis eleifend eget, sagittis ac ex. Nulla congue est sit amet sodales fringilla. Fusce sit amet turpis id ex cursus lobortis sit amet a nibh. Aenean vehicula, libero condimentum consectetur imperdiet, ipsum arcu tristique tortor, eget aliquam purus est ut urna. Suspendisse tincidunt dictum dui, vel gravida nisl posuere sit amet. Nunc feugiat lacus nulla, at dictum nulla egestas non. Phasellus tincidunt viverra lacus.
+
+                        Etiam sit amet ex quam. Fusce finibus massa et aliquam consectetur. Duis efficitur ullamcorper dolor ac eleifend. Praesent nibh dolor, fermentum quis urna eget, hendrerit imperdiet massa. Aliquam erat volutpat. Maecenas maximus porttitor elit sed laoreet. Integer elementum purus sit amet sollicitudin venenatis. Donec semper risus sed libero sagittis egestas. Donec in libero in massa ullamcorper vulputate.
+                        Morbi vitae massa sollicitudin sem dignissim vestibulum. Aenean efficitur ultrices tincidunt. Curabitur nec neque ac nisi ornare varius. Pellentesque orci ipsum, pretium in pretium vel, auctor ultrices arcu. Nam bibendum turpis vel tristique blandit. Donec eget pretium turpis, quis viverra turpis. Vivamus accumsan est non nunc auctor, in pretium lectus molestie. Proin sed bibendum lectus. Suspendisse ultrices est vitae dui mollis, sed sagittis orci convallis. Fusce et feugiat augue. Quisque varius rutrum libero sit amet volutpat. Sed at ex at nulla vehicula rutrum eu nec tortor.
+
+                        Nam sagittis augue eu turpis tristique pellentesque. Nullam convallis, tortor nec gravida condimentum, dui purus faucibus ex, nec ultrices neque arcu in justo. Donec nunc mauris, tincidunt non erat at, maximus pretium metus. Praesent pretium metus et metus condimentum, eu pretium enim dignissim. Donec sagittis quis nibh ornare gravida. Sed a sem ipsum. Praesent sit amet tellus tempus, tempus mi at, ullamcorper risus. Phasellus porta lacinia nisl, nec porta risus molestie non. Etiam sem turpis, tristique quis eleifend eget, sagittis ac ex. Nulla congue est sit amet sodales fringilla. Fusce sit amet turpis id ex cursus lobortis sit amet a nibh. Aenean vehicula, libero condimentum consectetur imperdiet, ipsum arcu tristique tortor, eget aliquam purus est ut urna. Suspendisse tincidunt dictum dui, vel gravida nisl posuere sit amet. Nunc feugiat lacus nulla, at dictum nulla egestas non. Phasellus tincidunt viverra lacus.
+
+                        Etiam facilisis id magna a fermentum. Pellentesque porttitor, lectus nec rutrum sagittis, nunc eros imperdiet mauris, et hendrerit lacus tortor quis risus. Morbi sollicitudin rhoncus justo. Maecenas vel nisi in lorem vulputate facilisis. Nam fringilla malesuada odio at pretium. Nulla facilisi. Donec ac pellentesque nibh. Pellentesque nibh diam, egestas sed enim ac, aliquam fringilla felis. Nullam eu mattis sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent consectetur vulputate tempus. Aenean egestas, eros et rhoncus congue, mauris risus bibendum tortor, ac luctus lacus ex quis ipsum. Aenean aliquam malesuada orci, nec eleifend nibh. Morbi sagittis vulputate leo, vitae mattis dui pellentesque eu. Aliquam nec tempor turpis.
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
     </div>
 
     <environment include="Development">
