@@ -3,12 +3,16 @@ using Microsoft.AspNetCore.Mvc;
 using ButterCMS;
 
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace SportsWebApp.Controllers
 {
     public class BlogController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         private static string _apiToken = "1cadd5d5c66eed9dbec3bf8a8a8df3c7b9f05e04";
 
         private ButterCMSClient _client;
@@ -25,5 +29,7 @@ namespace SportsWebApp.Controllers
             ViewBag.Post = response.Data;
             return View("Post");
         }
+
+       
     }
 }

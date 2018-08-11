@@ -12,7 +12,9 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "BlogID": "7336037632544950057",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "BlogAPIKey": "AIzaSyBHouV3FvYmTsTzJcWfnkFUwBglxltPNwo"
       }
     },
     "SportsWebApp": {
